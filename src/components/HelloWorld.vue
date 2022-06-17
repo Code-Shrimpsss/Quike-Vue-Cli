@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
-    <div class="container">    
-      <img alt="logo" class="logo" src="../assets/img/logo.png" />
+    <div class="container">
+      <div class="logo">
+        <img alt="logo" src="../assets/img/logo.png" />
+        <h1>welcome to <span>Quike </span> <span> Box </span> StartPage</h1>
+      </div>
       <h1 class="subtitle">{{ msg }}</h1>
     </div>
   </div>
@@ -81,9 +84,17 @@ main {
 .container {
   text-align: center;
 }
-
 .logo {
-  width: 300px;
-  height: 300px;
+  margin-bottom: 1.5em;
+}
+.logo img {
+  width: 19rem;
+  height: 19rem;
+}
+.logo span:nth-child(1) {
+  color: rgb(252, 74, 74);
+}
+.logo span:nth-child(2) {
+  color: rgb(64, 206, 141);
 }
 </style>
